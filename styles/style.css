@@ -1,0 +1,63 @@
+/* All Pages */
+
+body {
+    background-color: #124559;
+}
+
+.navbar {
+    background-color: #01161E;
+}
+
+/* Conditions Page */
+
+.img-fluid {
+    max-width: 60%;
+}
+
+.description,
+.imageless-description {
+    background: rgba(89, 131, 146, 0.5);
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 3rem;
+}
+
+.imageless-description {
+    list-style: none;
+}
+
+.dot {
+    font-size: x-large;
+    vertical-align: -5%;
+}
+
+/* Index Page */
+.preview {
+    height: 35rem;
+    border-radius: 3rem;
+    background-color: #598392 !important;
+    opacity: 80%;
+    transition: transform .25s, opacity .25s, border .025s, background-color .2s;
+}
+
+.preview:hover {
+    transform: scale(1.05);
+    opacity: 100%;
+}
+
+.preview:active {
+    --bs-btn-active-border-color: #EFF6E0;
+}
+
+.bi {
+    font-size: 1000%;
+}
+
+/* NPC Page */
+.npc-generate {
+    --bs-btn-bg: #AEC3B0;
+    --bs-btn-border-color: #AEC3B0;
+    --bs-btn-hover-bg: #9EB7A0;
+    --bs-btn-hover-border-color: #9EB7A0;
+    --bs-btn-active-bg: #80A183;
+    --bs-btn-active-border-color: #80A183;
+}

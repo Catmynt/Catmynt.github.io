@@ -1,0 +1,76 @@
+/* Dice Roller Buttons */
+#buttonContainer {
+    display: inline-grid;
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15rem;
+    max-height: 100%;
+
+}
+
+.smallButton {
+    grid-column: span 2;
+    /* text-indent: -0.5rem; */
+}
+
+.largeButton {
+    grid-column: span 3;
+}
+
+.equalsButton {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+
+button:not(.navbar-toggler) {
+    padding: 2rem 3rem !important;
+    width: 100%;
+    background-color: #AEC3B0;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 1rem !important;
+    border: none;
+    transition: background-color 0.25s;
+}
+
+button:hover:not(.navbar-toggler) {
+    background-color: #9EB7A0;
+}
+
+button:active:not(.navbar-toggler) {
+    background-color: #80A183;
+}
+
+.delete {
+    text-indent: -0.3rem;
+}
+
+/* Dice Roller Results */
+.calculation {
+    margin-top: 12rem;
+}
+
+.calcData {
+    content: '\200b';
+}
+
+.calcData:empty:before {
+    content: attr(data-placeholder);
+    opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #buttonController {
+        width: 10%;
+    }
+
+    button:not(.navbar-toggler) {
+        padding: 1rem !important;
+    }
+
+    .calculation {
+        margin-top: 0;
+    }
+}

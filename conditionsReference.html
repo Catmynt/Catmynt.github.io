@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="icosahedron.png">
+
+    <title>Final Project</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="icosahedron.png" alt="Bootstrap" width="38" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="diceRoller.html">Dice Roller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link aria-selected" href="conditionsReference.html">Conditions Sheet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="npc.html">NPC Generator</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conditions -->
+    <section class="mt-5 pt-5">
+        <!-- Blinded -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Blinded</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A blinded creature can't see and automatically fails any ability check that requires sight.
+                        </li>
+                        <li>Attack rolls against the creature have advantage, and the creature's attack rolls have
+                            disadvantage.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/blinded.png" class="img-fluid col-10 mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Charmed -->
+        <div class="row align-items-center mb-4">
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <img src="conditions/charmed.png" class="img-fluid col-10">
+            </div>
+
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Charmed</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A charmed creature can't attack the charmer or target the charmer with harmful abilities or
+                            magical effects.
+                        </li>
+                        <li>The charmer has advantage on any ability check to interact socially with the creature.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deafened -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Deafened</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A deafened creature can't hear and automatically fails any ability check that requires
+                            hearing.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/deafened.png" class="img-fluid col-10 mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Frightened -->
+        <div class="row align-items-center mb-4">
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <img src="conditions/frightened.png" class="img-fluid col-10 mb-4">
+            </div>
+
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Frightened</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A frightened creature has disadvantage on ability checks and attack rolls while the source
+                            of its fear is within line of sight.
+                        </li>
+                        <li>The creature can't willingly move closer to the source of its fear.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grappled -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Grappled</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+                        </li>
+                        <li>The condition ends if the grappler is incapacitated (see the condition).</li>
+                        <li>The condition also ends if an effect removes hte grappled creature from the reach of the
+                            grappler or grappling effect, such as when a creature is hurled away by the
+                            <strong>Thunderwave</strong> spell.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/grappled.png" class="img-fluid col-10 mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Incapacitated -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-12 justify-content-center align-items-center order-first order-lg-0 mb-4">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Incapacitated</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-5 imageless-description text-center">
+                        <li><span class="dot mx-1">•</span>An incapacitated creature can't take actions or reactions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invisible -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-12 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Invisible</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>An invisible creature is impossible to see without the aid of magic or a special sense. For
+                            the purpose of hiding, the creature is heavily obscured. The creature's location can be
+                            detected by any noise it makes ot any tracks it leaves.
+                        </li>
+                        <li>Attack rolls against the creature have disadvantage, and the creature's attack rolls have
+                            advantage.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paralyzed -->
+        <div class="row align-items-center mb-4">
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <img src="conditions/paralyzed.png" class="img-fluid col-10">
+            </div>
+
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Paralyzed</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A paralyzed creature is incapacitated (see the condition) and can't move or speak.
+                        </li>
+                        <li>The creature automatically fails Strength and Dexterity saving throws.</li>
+                        <li>Attack rolls against the creature have advantage, Any attack that hits the creature is a
+                            critical hit if the attacker is within 5 feet of the creature.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Petrified -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Petrified</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A petrified creature is transformed, along with any nonmagical object it is wearing or
+                            carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor
+                            of ten, and it ceases aging.
+                        </li>
+                        <li>The creature is incapacitated (see the condition), can't move or speak, and is unaware of
+                            its surroundings.</li>
+                        <li>Attack rolls against the creature have advantage.</li>
+                        <li>The creature automatically fails Strength and Dexterity saving throws.</li>
+                        <li>The creature has resistance to all damage.</li>
+                        <li>The creature is immune to poison and disease, although a poison or disease already in its
+                            system is suspended, not neutralized.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/petrified.png" class="img-fluid col-10 mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Poisoned -->
+        <div class="row align-items-center mb-4">
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/poisoned.png" class="img-fluid col-10 mb-4">
+                </div>
+            </div>
+
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Poisoned</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A poisoned creature has disadvantage on attack rolls and ability checks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prone -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Prone</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A prone creature's only movement option is to crawl, unless it stands up and thereby ends
+                            the condition.
+                        </li>
+                        <li>The creature has disadvantage on attack rolls.</li>
+                        <li>An attack roll against the creature has advantage if the attacker is within 5 feet of the
+                            creature. Otherwise, the attack roll has disadvantage.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center mx-1 me-lg-2">
+                    <img src="conditions/prone.png" class="img-fluid col-6 mb-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Restrained -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-12 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Restrained</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description justify-content-center">
+                        <li>A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.
+                        </li>
+                        <li>Attack rolls against the creature have advantage, and the creature's attack rolls have
+                            disadvantage.</li>
+                        <li>The creature has disadvantage on Dexterity saving throws.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stunned -->
+        <div class="row align-items-center mb-4">
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Stunned</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>A stunned creature is incapacitated (see the condition), can't move, and can speak only
+                            falteringly.
+                        </li>
+                        <li>The creature automatically fails Strength and Dexterity saving throws.</li>
+                        <li>Attack rolls against the creature have advantage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/stunned.png" class="img-fluid col-10">
+                </div>
+            </div>
+        </div>
+
+        <!-- Unconscious -->
+        <div class="row align-items-center mb-4">
+            <div class="d-flex col-lg-6 justify-content-center container-fluid">
+                <div class="row justify-content-center">
+                    <img src="conditions/unconscious.png" class="img-fluid col-10 mb-4">
+                </div>
+            </div>
+
+            <div class="col-lg-6 justify-content-center align-items-center order-first order-lg-0">
+                <div class="row">
+                    <div class="text-center">
+                        <h4 class="subheading text-light">Unconscious</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="text-light col-10 col-lg-8 description">
+                        <li>An unconscious creature is incapacitated (see the condition), can't move or speak, and is
+                            unaware of its surroundings.</li>
+                        <li>The creature drops whatever it's holding and falls prone.</li>
+                        <li>The creature automatically fails Strength and Dexterity saving throws.</li>
+                        <li>Attack rolls against the creature have advantage.</li>
+                        <li>Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the
+                            creature.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
