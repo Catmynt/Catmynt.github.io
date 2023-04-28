@@ -1,5 +1,4 @@
 /* All Pages */
-
 body {
     background-color: #124559;
 }
@@ -9,7 +8,6 @@ body {
 }
 
 /* Conditions Page */
-
 .img-fluid {
     max-width: 60%;
 }
@@ -28,6 +26,16 @@ body {
 .dot {
     font-size: x-large;
     vertical-align: -5%;
+}
+
+/* NPC Page */
+.npc-generate {
+    --bs-btn-bg: #AEC3B0;
+    --bs-btn-border-color: #AEC3B0;
+    --bs-btn-hover-bg: #9EB7A0;
+    --bs-btn-hover-border-color: #9EB7A0;
+    --bs-btn-active-bg: #80A183;
+    --bs-btn-active-border-color: #80A183;
 }
 
 /* Index Page */
@@ -50,14 +58,4 @@ body {
 
 .bi {
     font-size: 1000%;
-}
-
-/* NPC Page */
-.npc-generate {
-    --bs-btn-bg: #AEC3B0;
-    --bs-btn-border-color: #AEC3B0;
-    --bs-btn-hover-bg: #9EB7A0;
-    --bs-btn-hover-border-color: #9EB7A0;
-    --bs-btn-active-bg: #80A183;
-    --bs-btn-active-border-color: #80A183;
 }
