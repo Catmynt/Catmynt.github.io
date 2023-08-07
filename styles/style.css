@@ -1,6 +1,7 @@
 /* All Pages */
 body {
     background-color: #124559;
+    color: white;
 }
 
 .navbar {
@@ -58,4 +59,14 @@ body {
 
 .bi {
     font-size: 1000%;
+}
+
+@media screen and (max-width: 768px) {
+    .preview {
+        height: auto;
+    }
+
+    .bi {
+        font-size: 500%;
+    }
 }

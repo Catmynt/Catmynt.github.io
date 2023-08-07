@@ -134,10 +134,8 @@ function performOp(operator, num1, num2) {
 // Rolls numDice D numSides dice
 function roll(numDice, numSides) {
     let total = 0;
-    console.log(`Rolling ${numDice}d${numSides}`)
     for (let i = 0; i < numDice; i++) {
         const singleRoll = Math.floor((Math.random() * numSides) + 1);
-        console.log(singleRoll);
         rolls.push(singleRoll);
         total += singleRoll;
     }

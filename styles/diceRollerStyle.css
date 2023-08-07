@@ -4,9 +4,8 @@
     grid-template-columns: repeat(10, 2fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-    margin-top: 15rem;
-    max-height: 100%;
-
+    margin-top: 13rem;
+    max-height: 1rem;
 }
 
 .smallButton {
@@ -31,6 +30,7 @@ button:not(.navbar-toggler) {
     border-radius: 1rem !important;
     border: none;
     transition: background-color 0.25s;
+    max-height: 100%;
 }
 
 button:hover:not(.navbar-toggler) {
@@ -60,8 +60,8 @@ button:active:not(.navbar-toggler) {
 }
 
 @media screen and (max-width: 768px) {
-    #buttonController {
-        width: 10%;
+    #buttonContainer {
+        margin-top: 8rem;
     }
 
     button:not(.navbar-toggler) {
@@ -69,6 +69,6 @@ button:active:not(.navbar-toggler) {
     }
 
     .calculation {
-        margin-top: 0;
+        margin-top: 22rem;
     }
 }
