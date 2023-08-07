@@ -1,11 +1,16 @@
 /* Dice Roller Buttons */
 #buttonContainer {
     display: inline-grid;
+    color: black;
     grid-template-columns: repeat(10, 2fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     margin-top: 13rem;
     max-height: 1rem;
+
+    /* Disable Text Selection (Generic & Safari, respectfully) */
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .smallButton {
